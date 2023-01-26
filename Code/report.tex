@@ -1,0 +1,58 @@
+\documentclass{amsart}
+\synctex=1
+
+%=================================================================
+% 
+\newcount\DraftStatus  % 0 suppresses notes to selves in text
+\DraftStatus=1   % TODO: set to 0 for final version
+%=================================================================
+
+%=================================================================
+\usepackage{comment}
+\usepackage{makecell}
+%=================================================================
+%
+\includecomment{JournalOnly}  
+\includecomment{ConferenceOnly}  
+\includecomment{TulipStyle}
+%
+%=================================================================
+\input{preamble}
+
+
+%=================================================================
+%
+\begin{document}
+%
+%=================================================================
+%
+\title[Traffic Flow Prediction]{Traffic Flow Prediction In a U.S. Metropolis}%
+
+\author{Jingbao Luo}
+\address[A.~1]{School of Economics and Management,
+Nanjing University of Science and Technology, Jiangsu 210094, China}%
+\email[A.~1]{jluo@tulip.academy}
+
+
+
+
+
+%\thanks{Thanks to \ldots}%
+\date{\gitAuthorDate}%
+
+
+
+
+
+\maketitle
+\tableofcontents
+
+\newpage
+%=================================================================
+
+\input{./tex/mainbody}
+
+
+
+\end{document}
+
